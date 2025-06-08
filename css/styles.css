@@ -611,6 +611,68 @@ button {
   fill: #f4f4fd;
 }
 
+.footer-container-subscribe {
+  display: flex;
+  max-width: 453px;
+  min-height: 80px;
+  margin-left: 80px;
+}
+
+.footer-subscribe-form {
+  display: flex;
+}
+
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.sub-form {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  margin-top: 16px;
+  padding-left: 16px;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+}
+
+.sub-form::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  margin-left: auto;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+  align-items: center;
+  margin-left: 24px;
+  margin-top: auto;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
 /* /Footer */
 
 .backdrop {
@@ -665,6 +727,14 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.container-icon-closed:hover {
+  background-color: #404bbf;
+}
+
+.container-icon-closed:hover .icon-closed {
+  fill: #fff;
 }
 
 .form {
@@ -811,4 +881,9 @@ button {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+}
+
+.modal-btn:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #404bbf;
 }
