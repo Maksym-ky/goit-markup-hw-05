@@ -666,9 +666,9 @@
           </ul>
         </div>
         <div class="footer-container-subscribe">
-          <div class="footer-subscribe-form">
-            <label for="sub-email" class="subscribe-text"
-              >Subscribe
+          <p class="subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label for="subscribe-label" class="subscribe-label-form">
               <input
                 type="email"
                 name="subscribe-email"
@@ -676,20 +676,21 @@
                 id="sub-email"
                 placeholder="E-mail"
               />
+              <button type="submit" class="subscribe-btn">
+                Subscribe
+                <svg class="footer-icon-btn" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Frame"></use>
+                </svg>
+              </button>
             </label>
-          </div>
-          <button type="submit" class="subscribe-btn">
-            Subscribe
-            <svg class="footer-icon-btn" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame"></use>
-            </svg>
-          </button>
+          </form>
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-open">
       <div class="modal">
-        <div class="container-icon-closed">
+        <button type="button" class="icon-closed-btn">
           <svg
             class="icon-closed"
             width="8"
@@ -699,7 +700,7 @@
           >
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </div>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="form">
           <div class="modal-field">
@@ -711,7 +712,7 @@
                 type="text"
                 id="user-name"
               />
-              <svg class="form-input-icon" width="12" height="12">
+              <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
@@ -725,7 +726,7 @@
                 type="tel"
                 id="user-phone"
               />
-              <svg class="form-input-icon" width="13" height="13">
+              <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -739,18 +740,20 @@
                 type="email"
                 id="user-email"
               />
-              <svg class="form-input-icon" width="16" height="12">
+              <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <label for="user-comment" class="form-label">Comment</label>
-          <textarea
-            class="form-input-comment"
-            name="comment"
-            placeholder="Text input"
-            id="user-comment"
-          ></textarea>
+          <div class="form-comment-container">
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea
+              class="form-input-comment"
+              name="comment"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
           <div class="modal-field-checkbox">
             <input
               type="checkbox"

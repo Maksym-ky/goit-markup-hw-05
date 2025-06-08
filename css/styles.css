@@ -612,14 +612,9 @@ button {
 }
 
 .footer-container-subscribe {
-  display: flex;
   max-width: 453px;
   min-height: 80px;
   margin-left: 80px;
-}
-
-.footer-subscribe-form {
-  display: flex;
 }
 
 .subscribe-text {
@@ -628,6 +623,16 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-label-form {
+  display: flex;
 }
 
 .sub-form {
@@ -635,7 +640,6 @@ button {
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  margin-top: 16px;
   padding-left: 16px;
   align-items: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -651,13 +655,13 @@ button {
 }
 
 .subscribe-btn {
-  display: inline-flex;
+  display: flex;
   margin-left: auto;
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  gap: 16px;
+  /* gap: 16px; */
   width: 165px;
   height: 40px;
   align-items: center;
@@ -671,6 +675,10 @@ button {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+}
+
+.footer-icon-btn {
+  margin-left: 16px;
 }
 
 /* /Footer */
@@ -715,7 +723,7 @@ button {
   transform: translate(-50%, -50%) scale(1.5);
 }
 
-.container-icon-closed {
+.icon-closed-btn {
   position: absolute;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -729,11 +737,19 @@ button {
   display: flex;
 }
 
-.container-icon-closed:hover {
+.icon-closed-btn:hover {
   background-color: #404bbf;
 }
 
-.container-icon-closed:hover .icon-closed {
+.icon-closed-btn:focus {
+  background-color: #404bbf;
+}
+
+.icon-closed-btn:hover .icon-closed {
+  fill: #fff;
+}
+
+.icon-closed-btn:focus .icon-closed {
   fill: #fff;
 }
 
@@ -753,8 +769,8 @@ button {
 }
 
 .form-label {
-  display: inline-block;
-  padding-bottom: 4px;
+  display: block;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -762,14 +778,19 @@ button {
   color: #8e8f99;
 }
 
+.modal-field {
+  margin-bottom: 8px;
+}
+
 .form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 8px;
-  background-color: #fcfcfc;
+  background-color: transparent;
   padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
@@ -780,11 +801,11 @@ button {
 .form-input-icon {
   position: absolute;
   flex-direction: row;
-  width: 18px;
-  height: 24px;
   fill: #2e2f42;
   left: 16px;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .form-input-icon {
@@ -874,6 +895,8 @@ button {
   margin: 0 auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
