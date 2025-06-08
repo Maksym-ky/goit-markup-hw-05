@@ -643,7 +643,12 @@ button {
   padding-left: 16px;
   align-items: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #2e2f42;
+  background-color: transparent;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .sub-form::placeholder {
@@ -651,7 +656,7 @@ button {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .subscribe-btn {
@@ -661,8 +666,7 @@ button {
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  /* gap: 16px; */
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   align-items: center;
   margin-left: 24px;
@@ -735,6 +739,7 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 0;
 }
 
 .icon-closed-btn:hover {
